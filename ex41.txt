@@ -1,0 +1,6 @@
+class Xxx(Y) # "Make a class named ??? that is-a Y."
+class Xxx(Object): def __init__(self,Xxx) # "class ??? has-a __init__ that takes self and ??? parameters."
+class Xxx(Object): def xxx(self, xxx) # "class ??? has-a function named ??? that takes self and ??? parameters."
+foo = x() # "Set foo to an instance of class ???."
+foo.m(x) # "From foo get the ??? function, and call it with self=??? and parameters ???."
+foo.k = q # "From foo get the ??? attribute and set it to ???."
