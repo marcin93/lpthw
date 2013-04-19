@@ -26,11 +26,11 @@ if len(sys.argv) == 2 and sys.argv[1] == "english":
 	PHRASE_FIRST = True
 	
 # load up the words from the website
-from word in urlopen(WORD_URL).readlines():
+for word in urlopen(WORD_URL).readlines():
 	WORDS.append(word.strip())
 	
 def convert(snippet, phrase):
-	class_name = [w.capitalize() for w in 
+	class_names = [w.capitalize() for w in 
 				random.sample(WORDS, snippet.count("###"))]
 	other_names = random.sample(WORDS, snippet.count("***"))
 	results = []
