@@ -59,7 +59,7 @@ def convert(snippet, phrase):
 	
 	return results
 	
-# keep going until they hit CTRL-D
+# keep going until they hit CTRL-D / CTRL-Z on windows
 try:
 	while True:
 		snippets = PHRASES.keys()
